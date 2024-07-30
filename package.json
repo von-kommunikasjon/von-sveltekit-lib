@@ -1,6 +1,6 @@
 {
 	"name": "von-sveltekit-lib",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -35,17 +35,16 @@
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"type": "module",
-	"description": "Components and functions for use in svelteKit vith Sanity",
+	"description": "Components and functions for use in svelteKit vith Sanity backend",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/von-kommunikasjon/von-sanity-sveltekit-img.git"
+    "url": "git+https://github.com/von-kommunikasjon/von-sveltekit-lib"
   },
   "keywords": [
     "Sanity",
-    "Image",
     "SvelteKit"
   ],
   "author": "Bendik Schøien",
   "license": "MIT",
-  "homepage": "https://github.com/von-kommunikasjon/von-sanity-sveltekit-img#readme"
+  "homepage": "https://github.com/von-kommunikasjon/von-sveltekit-lib#readme"
 }
