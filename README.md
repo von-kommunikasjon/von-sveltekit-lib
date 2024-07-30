@@ -1,5 +1,5 @@
-# Sanity - SvelteKit | image url generator
-Components fore use in SvelteKit with Sanity.
+# SvelteKit components for Sanity projects
+SvelteKit components for Sanity frontends. Mainly Imageurl builder with no api calls. Hopfully it will grow.
 
 ## Install
 ```bash
@@ -51,7 +51,7 @@ const imageUrl = sanityImageUrl(spec)
 ```
 
 ### SvelteKit Component
-```svelte
+```html
 <script>
 
 import SanityImage from 'von-sveltekit-lib';
