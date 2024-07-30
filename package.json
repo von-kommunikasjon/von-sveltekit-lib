@@ -35,7 +35,7 @@
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"type": "module",
-	"description": "Generates image urls for sanity images an has a svelteKit image component",
+	"description": "Components and functions for use in svelteKit vith Sanity",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/von-kommunikasjon/von-sanity-sveltekit-img.git"

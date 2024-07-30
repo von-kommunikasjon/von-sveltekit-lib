@@ -1,14 +1,28 @@
 # Sanity - SvelteKit | image url generator
-
-Image url generator for use with sanity and sveltekit that not requiers sanity client with api calls pr. image.
-as an alternative to sanitys urlbuilder. Does not support all features.
+Components fore use in SvelteKit with Sanity.
 
 ## Install
 ```bash
-$ npm i von-sanity-sveltekit-img
+$ npm i von-sveltekit-lib
 ```
+## Available imports
+```js
+// Sveltekit components
+import {SanityImage} from 'von-sveltekit-lib';
 
-## Use
+// Functions
+import {sanityImageUrl} from 'von-sveltekit-lib';
+
+// constants with groq-queries
+import {imageQ} from 'von-sveltekit-lib';
+import {btnQ} from 'von-sveltekit-lib';
+import {menuQuery} from 'von-sveltekit-lib';
+
+``` 
+
+## Image url builder (Sanity)
+Image url generator for use with sanity and sveltekit that not requiers sanity client with api calls pr. image.
+as an alternative to sanitys urlbuilder. Does not support all features.
 ### Groq queries
 Requiers every image to fetch image base-url in initial fetch. Add this imageQuery to all groq image queries where you want to use this builder.
 ```javascript
@@ -21,7 +35,7 @@ const imageQ = /* groq */`
 ```
 ### JS function
 ```javascript
-import {sanityImageUrl} from 'von-sanity-sveltekit-img'
+import {sanityImageUrl} from 'von-sveltekit-lib'
 
 let spec = {
   image: 'sanityImage', // Sanity image object with url and dim
@@ -40,7 +54,7 @@ const imageUrl = sanityImageUrl(spec)
 ```svelte
 <script>
 
-import SanityImage from 'von-sanity-sveltekit-img';
+import SanityImage from 'von-sveltekit-lib';
 
 // Can contain multiple sizes for use with src set
 let sizeExample = [
