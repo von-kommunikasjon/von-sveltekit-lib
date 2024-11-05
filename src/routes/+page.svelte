@@ -7,7 +7,7 @@
 	const bigImgSize = [
 	 {width: 480, aspect: 1, screen: 'max-width: 512px'},
 	 {width: 960, aspect: 1.25, screen: 'max-width: 992px'},
-	 {width: 1200, aspect: 16/9, screen: 'min-width: 993px'},
+	 {width: 1280, aspect: 16/9, screen: 'min-width: 993px'},
 	]
 	const image = {
 		"crop": {
