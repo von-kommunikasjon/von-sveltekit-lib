@@ -3,23 +3,12 @@
 
 	export let sanityImage
 	export let sizes
-	//console.log(sizes);
-	//const image = sanityImage
-	let srcSet = []
-	if (sizes.length > 1){
-		sizes.forEach(e => {
-			const imgUrl = sanityImageUrl({
-				image: sanityImage,
-				...e
-			})
-			srcSet.push(imgUrl)
-		})
-	}
+
 </script>
 {#if sizes.length > 1}
 	<picture>
-		{#each srcSet as src, i}
-				<source media="({sizes[i].screen})" srcset="{src}">
+		{#each sizes as size}
+			<source media="({size.screen})" srcset="{sanityImageUrl({image: sanityImage, ...size})}">
 		{/each}
 		<img src="{sanityImageUrl({image: sanityImage, ...sizes[0]})}" alt="{sanityImage.alt}" loading="lazy">
 	</picture>
