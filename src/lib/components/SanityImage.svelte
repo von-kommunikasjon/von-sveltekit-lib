@@ -1,8 +1,7 @@
 <script>
 	import {sanityImageUrl} from '../index.js'
 
-	export let sanityImage
-	export let sizes
+	const {sanityImage, sizes} = $props()
 
 </script>
 {#if sizes.length > 1}
