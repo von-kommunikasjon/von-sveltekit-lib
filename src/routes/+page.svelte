@@ -43,14 +43,8 @@
 
 <div>
 	<h1>Dette er en test</h1>
-	<SanityImage sanityImage={image} sizes={bigImgSize} />
+	<SanityImage sanityImage={image} sizes={bigImgSize} style="max-height: 80vh;" />
 </div>
-
-<!--
-
-	
-	<pre>{JSON.stringify(page,null,2)}</pre>
-	-->
 
 <style lang='less'>
 

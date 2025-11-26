@@ -1,7 +1,7 @@
 <script>
 	import {sanityImageUrl} from '../index.js'
 
-	const {sanityImage, sizes} = $props()
+	const {sanityImage, sizes, ...rest} = $props()
 
 </script>
 {#if sizes.length > 1}
@@ -9,10 +9,10 @@
 		{#each sizes as size}
 			<source media="({size.screen})" srcset="{sanityImageUrl({image: sanityImage, ...size})}">
 		{/each}
-		<img src="{sanityImageUrl({image: sanityImage, ...sizes[0]})}" alt="{sanityImage.alt}" loading="lazy">
+		<img src="{sanityImageUrl({image: sanityImage, ...sizes[0]})}" alt="{sanityImage.alt}" loading="lazy" {...rest}>
 	</picture>
 {:else}
-	<img src="{sanityImageUrl({image: sanityImage, ...sizes[0]})}" alt="{sanityImage.alt}" loading="lazy">
+	<img src="{sanityImageUrl({image: sanityImage, ...sizes[0]})}" alt="{sanityImage.alt}" loading="lazy" {...rest}>
 {/if}
 <style>
 	img{

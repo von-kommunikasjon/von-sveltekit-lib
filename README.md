@@ -54,7 +54,7 @@ const imageUrl = sanityImageUrl(spec)
 ```html
 <script>
 
-import SanityImage from 'von-sveltekit-lib';
+import {SanityImage} from 'von-sveltekit-lib';
 
 // Can contain multiple sizes for use with src set
 let sizeExample = [
@@ -74,4 +74,8 @@ let sizeExample = [
 </script>
 
 <SanityImage sanityImage={sanityImageObj} sizes={sizeExample} />
+```
+Rest props will be added to image tag, so you can send custom styling to <img /> like this:
+```html
+<SanityImage sanityImage={sanityImageObj} sizes={sizeExample} style="max-height: 80vh;" />
 ```
