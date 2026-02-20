@@ -1,6 +1,6 @@
 {
 	"name": "von-sveltekit-lib",
-	"version": "0.3.0",
+	"version": "0.2.5",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -38,7 +38,7 @@
 	"description": "Components and functions for use in svelteKit vith Sanity backend",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/von-kommunikasjon/von-sveltekit-lib"
+		"url": "git+https://github.com/von-kommunikasjon/von-sveltekit-lib.git"
 	},
 	"keywords": [
 		"Sanity",
