@@ -45,6 +45,7 @@ let spec = {
   bg: 'fff', // string any color
   fit: 'crop', // crop | clip | fill
   blur: 10, // 1-2000
+  q: 75 // image quality (compression). 0-100. Default to 75 
 }
 
 const imageUrl = sanityImageUrl(spec)
@@ -65,6 +66,7 @@ let sizeExample = [
 		bg: 'fff', // string any color
 		fit: 'crop', // crop | clip | fill
 		blur: 10, // 1-2000
+		q: 75, // image quality (compression). 0-100. Default to 75 
 		screen: 'max-width: 512px', // valid media query
 	},
 	{

@@ -1,6 +1,7 @@
 <script>
 	import {SanityImage} from '../lib/index.js';
-
+	import {sanityImageUrl} from '../lib/index.js';
+	
 	const listImgSize = [
 		{width: 480, height: 300},
 	]
@@ -38,12 +39,15 @@
 			"height": 1200
 		}
 	}
+	
 </script>
 
 
 <div>
 	<h1>Dette er en test</h1>
 	<SanityImage sanityImage={image} sizes={bigImgSize} style="max-height: 80vh;" />
+	<img src={sanityImageUrl({image, width: 300})} alt={image.alt}>
+	<p>{sanityImageUrl({image, width: 300})}</p>
 </div>
 
 <style lang='less'>

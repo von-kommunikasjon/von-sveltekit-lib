@@ -1,6 +1,6 @@
 {
 	"name": "von-sveltekit-lib",
-	"version": "0.2.3",
+	"version": "0.3.0",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -23,14 +23,14 @@
 		"svelte": "^5.34.3"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^6.0.0",
-		"@sveltejs/kit": "^2.22.0",
-		"@sveltejs/vite-plugin-svelte": "^6.0.0",
-		"@sveltejs/package": "^2.0.0",
-		"publint": "^0.1.9",
-		"svelte": "^5.34.3",
-		"typescript": "^5.8.3",
-		"vite": "^7.0.4"
+		"@sveltejs/adapter-auto": "^7.0.0",
+		"@sveltejs/kit": "^2.50.2",
+		"@sveltejs/vite-plugin-svelte": "^6.2.4",
+		"@sveltejs/package": "^2.5.7",
+		"publint": "^0.3.15",
+		"svelte": "^5.50.0",
+		"typescript": "^5.9.3",
+		"vite": "^7.3.1"
 	},
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",

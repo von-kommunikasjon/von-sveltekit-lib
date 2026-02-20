@@ -1,6 +1,6 @@
 export const sanityImageUrl = (spec) => {
   //console.log(spec.image.alt);
-  const { image, width, height, aspect, fit, bg, blur } = spec;
+  const { image, width, height, aspect, fit, bg, blur, q } = spec;
   const asset = {
     width: image.dim.width,
     height: image.dim.height
@@ -39,6 +39,9 @@ export const sanityImageUrl = (spec) => {
 
   if (blur) {
     params.push(`blur=${blur}`);
+  }
+  if (q) {
+    params.push(`q=${q}`);
   }
 
   if (width) {
